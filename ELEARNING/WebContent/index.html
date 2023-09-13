@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Learn & Grow</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js">
+		</script>
+		
+	<style>
+.footer {
+  
+   background-color: white;
+   
+ 
+}
+</style>
+
+</head>
+
+  <body>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+	
+  <!-- Brand/logo -->
+   <div id="left">
+   
+   <a class="navbar-brand" href="index.html"><img src="img/l_1.jpg" alt="logo" style="width:100px; height=70px; margin-top:-20px;"></a>
+   
+  </div>
+  </div>
+  <!-- Links -->
+  <ul  class="nav navbar-nav">
+    <li>
+      <a class="nav-link" href="#"></a>
+    </li>
+  </ul>
+
+	 
+	
+ 	<div  class="collapse navbar-collapse" id="navbar">
+   <div class="navbar-right">
+ 	<ul class="nav navbar-nav">
+ 	  <li><a href="#"></a></li>
+       <li><a href="Course.jsp">Courses</a></li> 
+      <li><a><span data-toggle="modal" data-target="#myModal">Login/Signup</span></a></li>
+	 
+    </ul>
+  </div> 
+  </div>
+  </div>
+</nav>
+<div id="content" style="margin-top:-50px;">
+            <!--Main banner image-->
+            <div id = "banner_image">
+                <div class="container">	
+                    <center>
+                        <div id="banner_content">
+                            <h1>LEARN & GROW</h1>
+                            
+                            <br/>
+                           <a>  <span data-toggle="modal" data-target="#myModal" class="btn btn-danger btn-lg active">Let's Start</span></a>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <!--Main banner image end-->
+
+</div>
+
+
+ 
+      
+  <!-- footer end -->
+
+<div class="container">
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button> 
+          <h2>WELCOME<h2>
+        </div>
+        <div class="modal-body">
+ 
+  <div class="w3-bar w3-border-bottom">
+   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'login')">Log in</button>
+   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'signup')">Sign Up</button>
+  </div>
+
+  <div id="login" class="w3-container city">
+  <form action="login" method="get">
+    <div class="form-group">
+      <label for="email">Username:</label>
+      <input type="text" class="form-control" placeholder="Enter username" name="uname">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" placeholder="Enter password" name="pass">
+    </div>
+    
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+  <div id="signup" class="w3-container city">
+  <form action="signup" method="post">
+  
+ <div class="form-group">
+      <label for="text">Full Name:</label>
+      <input type="text" class="form-control" id="text" placeholder="Enter name" name="name">
+    </div>  
+           
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+<div class="form-group">
+      <label for="email">Ph.NO.:</label>
+      <input type="text" class="form-control" id="text" placeholder="Enter phno" name="contact">
+    </div>
+
+
+    <div class="form-group">
+    
+	 <label for="pwd">You are:</label>	
+	<select name="gender">
+	<option value="MALE">MALE</option>
+	<option value="FEMALE">FEMALE
+	</option></select>
+	</div>
+
+<div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pass" placeholder="Enter pass" name="pass">
+    </div>
+   
+<div class="form-group">
+      <label for="pwd">City:</label>
+      <input type="text" class="form-control" id="city" placeholder="Enter city" name="city">
+    </div>
+
+<div class="form-group">
+      <label for="pwd">Pincode:</label>
+      <input type="text" class="form-control" id="pin" placeholder="Enter pin" name="pin">
+    </div>
+	
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+  </div>
+  </div></div></div></div>
+  
+  
+  
+ 
+  
+
+<script>
+document.getElementsByClassName("tablink")[0].click();
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-light-grey");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.classList.add("w3-light-grey");
+}
+</script>
+
+ 
+
+ 
+        
+  
+ </body>   
+
+
+</html>

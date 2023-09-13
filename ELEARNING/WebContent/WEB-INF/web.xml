@@ -1,0 +1,22 @@
+<web-app>
+	<servlet>
+		<servlet-name>demo</servlet-name>
+		<servlet-class>Controller.ServletLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>demo</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>demo1</servlet-name>
+		<servlet-class>Controller.ServletSignup</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>demo1</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+</web-app>
